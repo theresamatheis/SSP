@@ -77,7 +77,7 @@ public class ChatPanel extends JPanel {
 		this.add(ueberschriftLbl, c[c_index]);
 		
 		c[c_index].gridx = 1;
-		this.ausgabenClearBtn = new JButton("Löschen");
+		this.ausgabenClearBtn = new JButton("LÃ¶schen");
 		this.ausgabenClearBtn.addActionListener(new ActionListener() {
 			
 			@Override
@@ -154,7 +154,7 @@ public class ChatPanel extends JPanel {
 	}
 	
 	/** 
-	 * Setze den Fokus auf ein Widget.
+	 * Setze den Fokus auf ein Widget. WICHTIG!
 	 */
 	public void setFokus() {
 		this.eingabeTextField.requestFocusInWindow();
