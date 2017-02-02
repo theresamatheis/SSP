@@ -7,7 +7,7 @@ import SSP_interface.RMIClientIF;
 
 /**
  * @author konrad
- *
+ * Das ist ein wichtiger Kommentar, der nich fehlen sollte!
  */
 public class Spieler {
 
