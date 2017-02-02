@@ -42,7 +42,7 @@ import SSP_interface.RMIServerIF;
 
 /**
  * @author Theri
- *hallo
+ *
  */
 public class ConnectionPanel extends JPanel implements Serializable {
 
