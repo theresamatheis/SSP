@@ -42,7 +42,7 @@ import SSP_interface.RMIServerIF;
 
 /**
  * @author Theri
- *
+ *hallo
  */
 public class ConnectionPanel extends JPanel implements Serializable {
 
@@ -178,7 +178,7 @@ public class ConnectionPanel extends JPanel implements Serializable {
 		this.userNameTextField.setText(new HostUsernameKlasse().getUsernameAusHostname(selectedItem));
 		this.userNameTextField.getInputMap().put(KeyStroke.getKeyStroke("ENTER"), "eingabeFertig");
 		this.userNameTextField.getActionMap().put("eingabeFertig", eingabeFertig);
-		this.userNameTextField.setToolTipText("Eingabe unbedingt mit <Return>-Taste abschließen!");
+		this.userNameTextField.setToolTipText("Eingabe unbedingt mit <Return>-Taste abschlieÃŸen!");
 		this.add(userNameTextField, c[c_index]);
 		
 		c_index++;
@@ -190,7 +190,7 @@ public class ConnectionPanel extends JPanel implements Serializable {
 		this.add(ausgabeTextScrollPane, c[c_index]);
 
 		c_index++;
-		this.clearBtn = new JButton("Meldungen löschen");
+		this.clearBtn = new JButton("Meldungen lÃ¶schen");
 		this.clearBtn.addActionListener(new ActionListener() {
 
 			@Override
@@ -226,14 +226,14 @@ public class ConnectionPanel extends JPanel implements Serializable {
 							clientController.server = (RMIServerIF) Naming.lookup(bindURL);
 						} catch (NotBoundException e) {
 							// Wenn der Server nicht registriert ist ...
-							meldung = "Läuft der Server?\n";							
+							meldung = "LÃ¤uft der Server?\n";							
 							System.out.println(meldung +  e.getMessage());
 						} catch (MalformedURLException e) {
 					 		// Wenn die URL falsch angegeben wurde ...
-							meldung = "URL "+ bindURL + " ist ungültig.\n";
+							meldung = "URL "+ bindURL + " ist ungÃ¼ltig.\n";
 							System.out.println(meldung + e.getMessage());
 						} catch (RemoteException e) {
-							// Wenn während der Kommunikation ein Fehler auftritt
+							// Wenn wÃ¤hrend der Kommunikation ein Fehler auftritt
 							meldung = "Allgemeiner Kommunikationsfehler\n";
 							System.out.println(meldung + e.getMessage());
 						}
@@ -405,9 +405,9 @@ public class ConnectionPanel extends JPanel implements Serializable {
 			if(hostVorgabenVector.contains(hostname)) {
 				int itemIndex = hostVorgabenVector.indexOf(hostname);
 				if(e.getSource() == hostComboBox) {
-					// In der ComboBox wurde das Ereignis ausgelöst
+					// In der ComboBox wurde das Ereignis ausgelÃ¶st
 					// Wenn es ein schon vorhandener Host-Name ist,
-					//  wird der zugehörige Benutzername herausgesucht und
+					//  wird der zugehÃ¶rige Benutzername herausgesucht und
 					//  in das entsprechende Text-Feld eingefuegt
 					username = hostUserVector.elementAt(itemIndex).username;
 					userNameTextField.setText(username);
