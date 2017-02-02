@@ -1,0 +1,2 @@
+# SSP
+Schere, Stein, Papier
